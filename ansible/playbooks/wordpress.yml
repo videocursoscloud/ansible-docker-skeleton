@@ -1,0 +1,12 @@
+---
+- hosts: 'localhost'
+  tasks:
+    - include: ../tasks/nginx.yml
+    - include: ../tasks/php.yml
+    - include: ../tasks/php-fpm.yml
+    - include: ../tasks/git-clone.yml
+      vars:
+        "repo": "https://github.com/WordPress/WordPress.git"
+        "dest": "/var/www/html"
+        "version": "5.7"
+      

@@ -1,0 +1,7 @@
+---
+- hosts: 'localhost'
+  tasks:
+    - include: ../tasks/nginx.yml
+    - include: ../tasks/php.yml
+    - include: ../tasks/php-fpm.yml
+      

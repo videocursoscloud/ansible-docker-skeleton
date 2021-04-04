@@ -1,0 +1,9 @@
+---
+- name: Git clone
+  git:
+    repo: "{{ repo }}"
+    dest: "{{ dest }}"
+    version: "{{ version }}"
+
+- debug:
+    msg: "clonando {{ repo }} {{ dest }} {{ version }}"

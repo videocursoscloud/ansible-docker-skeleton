@@ -1,0 +1,5 @@
+FROM baseimage
+
+COPY ansible /opt/ansible
+
+RUN ansible-playbook /opt/ansible/playbooks/application1.yml

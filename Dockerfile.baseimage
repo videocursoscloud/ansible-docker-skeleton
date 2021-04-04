@@ -1,0 +1,10 @@
+FROM amazonlinux:latest
+
+RUN amazon-linux-extras install epel -y
+RUN yum update -y
+
+RUN yum install ansible git nano make -y
+
+RUN mkdir /opt/ansible
+
+
